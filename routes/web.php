@@ -25,6 +25,9 @@ Route::get('belajar/create', 'BelajarController@createroom');
 Route::get('belajar/createroom', 'BelajarController@createroom');
 Route::post('belajar', 'BelajarController@storeroom');
 
+Route::get('belajar/createuser', 'BelajarController@createuser');
+Route::post('belajar/storeuser', 'BelajarController@storeuser');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

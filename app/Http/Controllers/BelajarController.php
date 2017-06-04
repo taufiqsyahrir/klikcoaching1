@@ -42,4 +42,14 @@ class BelajarController extends Controller
 
         return redirect(url('belajar')); //ini menuju /petitions menggunakan metode get
     }
+
+    public function createuser()
+    {
+        $rooms = Room::all();
+        return view('belajar/createuser', compact('rooms'));
+    }
+
+    public function storeuser(){
+        return redirect(url('belajar')); //ini menuju /petitions menggunakan metode get
+    }
 }
